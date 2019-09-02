@@ -10,18 +10,18 @@
        
        DATA DIVISION.
           FILE SECTION.
-          FD FILEN
-          01 NAME PIC A(25).
+           FD FILEN
+           01 NAME PIC A(25).
           
-          WORKING-STORAGE SECTION.
-          01 WS-STUDENT PIC A(30).
-          01 WS-ID PIC 9(5).
+       WORKING-STORAGE SECTION.
+         01 WS-STUDENT PIC A(30).
+         01 WS-ID PIC 9(5).
        
-          LOCAL-STORAGE SECTION.
-          01 LS-CLASS PIC 9(3).
+       LOCAL-STORAGE SECTION.
+         01 LS-CLASS PIC 9(3).
           
-          LINKAGE SECTION.
-          01 LS-ID PIC 9(5).
+       LINKAGE SECTION.
+        01 LS-ID PIC 9(5).
           
        PROCEDURE DIVISION.
        
@@ -42,4 +42,4 @@
        END-EXEC.
        
       DISPLAY 'Executing COBOL program using JCL'.
-       STOP RUN.
+      STOP RUN.
