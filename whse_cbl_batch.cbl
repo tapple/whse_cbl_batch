@@ -26,16 +26,14 @@
        PROCEDURE DIVISION.
        
        0000-INITIALIZE-PARA.
-       EXEC SQL
-        DECLARE DSN8C10.DEPT TABLE
+          EXEC SQL
+          DECLARE DSN8C10.DEPT TABLE
           (DEPTNO    CHAR(3)           NOT NULL,
            DEPTNAME  VARCHAR(36)       NOT NULL,
            MGRNO     CHAR(6)                   ,
            ADMRDEPT  CHAR(3)           NOT NULL,
            LOCATION  CHAR(16)                  ) 
-       END-EXEC. 
+          END-EXEC. 
         
-       
-       
-          DISPLAY 'Executing COBOL program using JCL'.
+       DISPLAY 'Executing COBOL program using JCL'.
        STOP RUN.
